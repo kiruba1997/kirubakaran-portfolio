@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home </title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <header class="bg-black shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-red-500">Kirubakaran</h1>
+      <nav>
+        <ul class="flex space-x-6 text-white">
+          <li><a href="index.html" class="text-red-500 font-semibold">Home</a></li>
+          <li><a href="about.html" class="hover:text-red-500">About</a></li>
+          <li><a href="skills.html" class="hover:text-red-500">Skills</a></li>
+          <li><a href="experience.html" class="hover:text-red-500">Experience</a></li>
+          <li><a href="achievements.html" class="hover:text-red-500">Achievements</a></li>
+          <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+          <li><a href="spellsyntax.html" class="hover:text-red-500">SPELL SYNTAX</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Offset for fixed navbar -->
+  <div class="pt-24"></div>
+
+  <!-- Hero Section -->
+  <section 
+  class="relative h-screen bg-cover bg-center flex items-center justify-start px-6 md:px-20"
+  style="background-image: url('images/bc.jpg');"
+>
+  <!-- Dark overlay -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 z-0"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-lg md:max-w-xl text-left" data-aos="fade-right">
+    <h2 class="text-4xl md:text-6xl font-bold text-white mb-3 leading-tight">
+      Hi, I'm <span class="text-red-500">Kirubakaran</span>
+    </h2>
+    <p class="text-xl text-gray-300 mb-6 max-w-md">
+      Senior Technical Trainer | Java, Python, SQL, DSA
+    </p>
+    <a href="about.html" class="inline-block bg-red-500 hover:bg-red-600 text-white py-3 px-6 rounded-lg shadow-lg transition duration-300">
+      Learn More
+    </a>
+  </div>
+</section>
+
+<!-- Animated Counters Section -->
+<section class="py-16 bg-gray-900">
+  <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center" data-aos="fade-up">
+    
+    <div>
+      <div class="counter text-5xl font-bold text-red-500" data-target="5">0</div>
+      <p class="mt-2 text-gray-300">Years of Experience</p>
+    </div>
+
+    <div>
+      <div class="counter text-5xl font-bold text-red-500" data-target="5000">0</div>
+      <p class="mt-2 text-gray-300">Students Trained</p>
+    </div>
+
+    <div>
+      <div class="counter text-5xl font-bold text-red-500" data-target="10">0</div>
+      <p class="mt-2 text-gray-300">Technologies Covered</p>
+    </div>
+
+    <div>
+      <div class="counter text-5xl font-bold text-red-500" data-target="8">0</div>
+      <p class="mt-2 text-gray-300">Workshops Delivered </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  // Counter animation
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increment = target / 200; // control speed here
+
+      if(count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kirubakaran </title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+</head>
+
+<body class="bg-black text-white relative">
+
+  <!-- Floating Subscribe Button -->
+  <a href="https://www.youtube.com/@spellsyntax" target="_blank"
+     class="fixed bottom-6 right-6 bg-red-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-red-700 transition z-50">
+    <i class="fab fa-youtube mr-2"></i> Subscribe
+  </a>
+
+  <!-- Navbar -->
+  <header class="bg-black shadow-md fixed top-0 left-0 w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-red-500">Kirubakaran</h1>
+      <nav>
+        <ul class="flex space-x-6 text-white">
+          <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-red-500">About</a></li>
+          <li><a href="skills.html" class="hover:text-red-500">Skills</a></li>
+          <li><a href="experience.html" class="hover:text-red-500">Experience</a></li>
+          <li><a href="achievements.html" class="hover:text-red-500">Achievements</a></li>
+          <li><a href="spellsyntax.html" class="text-red-500 font-semibold">Spell Syntax</a></li>
+          <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Offset for Navbar -->
+  <div class="pt-24"></div>
+
+  <!-- Intro -->
+  <section class="text-center py-16" data-aos="zoom-in">
+    <h2 class="text-5xl font-bold text-red-500 mb-4 tracking-widest">SPELL SYNTAX</h2>
+    <p class="text-gray-300 text-lg max-w-xl mx-auto">
+      A magical journey through programming! We teach Python, Java, and soon Groovy with beginner-friendly video tutorials.
+    </p>
+  </section>
+
+  <!-- Video Gallery -->
+  <section class="py-10 px-4 md:px-24">
+    <h3 class="text-3xl font-semibold text-center text-white mb-10" data-aos="fade-up">📹 Latest Videos</h3>
+    <div class="grid md:grid-cols-2 gap-10" data-aos="fade-up" data-aos-delay="100">
+      
+      <!-- Video 1 -->
+      <div class="backdrop-blur-md bg-white/5 p-4 rounded-2xl shadow-lg hover:scale-105 transition">
+        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/SIgMkeN4GNo"
+          title="Intro to Python" frameborder="0" allowfullscreen></iframe>
+        <h4 class="mt-4 text-lg font-semibold text-white">Intro to Python Basics</h4>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="backdrop-blur-md bg-white/5 p-4 rounded-2xl shadow-lg hover:scale-105 transition">
+        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/BzDqH_zZEZs"
+          title="Java LeetCode Q1" frameborder="0" allowfullscreen></iframe>
+        <h4 class="mt-4 text-lg font-semibold text-white">Java LeetCode - Q1</h4>
+      </div>
+
+    </div>
+
+    <!-- Visit Full Channel -->
+    <div class="text-center mt-10">
+      <a href="https://www.youtube.com/@spellsyntax" target="_blank"
+         class="inline-block bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 transition">
+        Visit Full Channel
+      </a>
+    </div>
+  </section>
+   <section class="text-center py-12 bg-red-900 text-white rounded-xl shadow-xl mt-12">
+  <h2 class="text-3xl font-bold mb-4">Subscribe to Spell Syntax 🔔</h2>
+  <p class="mb-6">New coding videos every week – Python, Java, DSA, and more!</p>
+  <a href="https://www.youtube.com/@spellsyntax" target="_blank" class="bg-white text-red-700 px-6 py-2 rounded-full font-semibold hover:bg-red-200 transition">
+    <i class="fab fa-youtube mr-2"></i> Subscribe Now
+  </a>
+</section>
+
+  <!-- Upcoming Series -->
+  <section class="bg-gray-900 py-16 px-4 md:px-24 mt-10" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold text-center text-white mb-6">🎬 Coming Soon</h3>
+    <div class="text-center text-gray-300 text-lg">
+      Our Python Basics and Java LeetCode series are just the beginning!  
+      <br/>
+      Stay tuned for our upcoming series on <span class="text-red-500 font-semibold">Groovy Programming</span>!
+    </div>
+  </section>
+ 
+
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+
+</body>
+</html>

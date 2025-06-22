@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <header class="bg-black shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-red-500">Kirubakaran</h1>
+      <nav>
+        <ul class="flex space-x-6 text-white">
+          <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-red-500">About</a></li>
+          <li><a href="skills.html" class="hover:text-red-500">Skills</a></li>
+          <li><a href="experience.html" class="hover:text-red-500">Experience</a></li>
+          <li><a href="achievements.html" class="hover:text-red-500">Achievements</a></li>
+          <li><a href="spellsyntax.html" class="hover:text-red-500">Spell Syntax</a></li>
+          <li><a href="contact.html" class="text-red-500 font-semibold">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Offset for fixed navbar -->
+  <div class="pt-24"></div>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-6 md:px-24">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-red-500">Contact</h2>
+      <p class="mt-2 text-gray-300">Let's connect! Reach out anytime.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-envelope text-red-500 text-2xl"></i>
+          <div>
+            <p class="text-gray-300">kirubasid33@gmail.com</p>
+            <p class="text-gray-300">kirubakaran.lesuccess@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-phone-alt text-red-500 text-2xl"></i>
+          <p class="text-gray-300">+91 70929 34160</p>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-map-marker-alt text-red-500 text-2xl"></i>
+          <p class="text-gray-300">Erode, Tamil Nadu</p>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <i class="fab fa-github text-red-500 text-2xl"></i>
+          <a href="https://github.com/kiruba1997" target="_blank" class="text-gray-300 hover:text-white">github.com/kiruba1997</a>
+        </div>
+        <!-- Social Media -->
+    <div class="flex items-center space-x-4" data-aos="fade-up">
+      <h3 class="text-xl font-semibold text-gray-300 ">Connect with me</h3>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.linkedin.com/in/kirubakaran-sivasankaran-0b1aa5243" target="_blank" class="text-white text-2xl hover:text-red-500"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/kiruba_grool?utm_source=qr&igsh=bTU4djY2dmF0aGhv" target="_blank" class="text-white text-2xl hover:text-red-500"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="bg-gray-900 p-6 rounded-xl space-y-6 shadow-lg">
+        <div>
+          <label class="block mb-1 text-sm text-gray-400">Your Name</label>
+          <input type="text" placeholder="Enter your name" class="w-full px-4 py-2 bg-black text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" />
+        </div>
+
+        <div>
+          <label class="block mb-1 text-sm text-gray-400">Your Email</label>
+          <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 bg-black text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" />
+        </div>
+
+        <div>
+          <label class="block mb-1 text-sm text-gray-400">Message</label>
+          <textarea rows="4" placeholder="Your message..." class="w-full px-4 py-2 bg-black text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+        </div>
+
+        <button type="submit" class="bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-600 transition duration-300">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

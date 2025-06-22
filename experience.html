@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experience</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <header class="bg-black shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-red-500">Kirubakaran</h1>
+      <nav>
+        <ul class="flex space-x-6 text-white">
+          <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-red-500">About</a></li>
+          <li><a href="skills.html" class="hover:text-red-500">Skills</a></li>
+          <li><a href="experience.html" class="text-red-500 font-semibold">Experience</a></li>
+          <li><a href="achievements.html" class="hover:text-red-500">Achievements</a></li>
+          <li><a href="spellsyntax.html" class="hover:text-red-500">Spell Syntax</a></li>
+          <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Offset for navbar -->
+  <div class="pt-24"></div>
+
+  <!-- Experience Section -->
+  <section class="py-16 max-w-7xl mx-auto px-4 md:px-24">
+    <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="800">
+      <h2 class="text-4xl font-bold text-red-500">Experience</h2>
+      <p class="mt-2 text-gray-400 max-w-xl mx-auto">
+        Organizations where I delivered technical training and tutoring
+      </p>
+    </div>
+
+    <div class="grid gap-10 md:grid-cols-3">
+
+      <!-- LeSuccess -->
+      <div
+        class="bg-gray-900 p-6 rounded-xl transform transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:bg-gradient-to-r hover:from-gray-900 hover:via-red-900 hover:to-gray-900 hover:border hover:border-red-500 flex flex-col items-center text-center md:text-left"
+        data-aos="fade-right" data-aos-delay="100" data-aos-duration="800"
+      >
+        <img
+          src="images/les.png"
+          alt="LeSuccess Logo"
+          class="w-32 h-32 object-contain mb-6"
+        />
+        <h3 class="text-xl font-bold text-red-500 mb-3">LeSuccess – Senior Technical Trainer</h3>
+        <p class="text-gray-400">
+          Trained college students on programming languages like Python, Java, and DSA.
+          Created hands-on sessions, live coding, and mock placement challenges.
+          Helped students become industry-ready with real-time logic building and technical mentoring.
+        </p>
+      </div>
+
+      <!-- FacePrep -->
+      <div
+        class="bg-gray-900 p-6 rounded-xl transform transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:bg-gradient-to-r hover:from-gray-900 hover:via-red-900 hover:to-gray-900 hover:border hover:border-red-500 flex flex-col items-center text-center md:text-left"
+        data-aos="fade-up" data-aos-delay="200" data-aos-duration="800"
+      >
+        <img
+          src="images/faceprep_logo.jpeg"
+          alt="FacePrep Logo"
+          class="w-32 h-32 object-contain mb-6"
+        />
+        <h3 class="text-xl font-bold text-red-500 mb-3">FacePrep – Technical Trainer</h3>
+        <p class="text-gray-400">
+          Delivered semester and company-specific training across all VIT campuses.
+          Prepared students for technical and placement exams with tailored sessions.
+          Managed training programs for diverse engineering branches.
+        </p>
+      </div>
+
+      <!-- Focus Edumatics -->
+      <div
+        class="bg-gray-900 p-6 rounded-xl transform transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:bg-gradient-to-r hover:from-gray-900 hover:via-red-900 hover:to-gray-900 hover:border hover:border-red-500 flex flex-col items-center text-center md:text-left"
+        data-aos="fade-left" data-aos-delay="300" data-aos-duration="800"
+      >
+        <img
+          src="images/focus.png"
+          alt="Focus Edumatics Logo"
+          class="w-32 h-32 object-contain mb-6"
+        />
+        <h3 class="text-xl font-bold text-red-500 mb-3">Focus Edumatics – Online Tutor (Mathematics)</h3>
+        <p class="text-gray-400">
+          Delivered online mathematics tutoring for US-based curriculum.
+          Handled a wide range of student queries, supporting concept explanation,
+          live problem-solving, and academic guidance.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 bg-black shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-red-500">Kirubakaran</h1>
+      <nav>
+        <ul class="flex space-x-6 text-white font-medium">
+          <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+          <li><a href="about.html" class="text-red-500 font-semibold">About</a></li>
+          <li><a href="skills.html" class="hover:text-red-500">Skills</a></li>
+          <li><a href="experience.html" class="hover:text-red-500">Experience</a></li>
+          <li><a href="achievements.html" class="hover:text-red-500">Achievements</a></li>
+          <li><a href="spellsyntax.html" class="hover:text-red-500">Spell Syntax</a></li>
+          <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Offset for navbar -->
+  <div class="pt-24"></div>
+
+  <!-- Hero Section (Inspired by Folio) -->
+  <section class="text-center px-6 md:px-24 py-20 bg-black">
+    <div data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold text-red-500 mb-4">About Me</h2>
+      <p class="text-lg text-gray-400 mb-10">Let me walk you through my journey</p>
+
+      <div class="flex justify-center mb-12" data-aos="zoom-in">
+        <img src="images/bc.jpg" alt="Profile Image" class="w-64 h-64 object-cover rounded-lg border-4 border-red-500 shadow-xl" />
+      </div>
+
+      <div class="max-w-4xl mx-auto text-left space-y-6 text-gray-300 text-lg leading-relaxed" data-aos="fade-up">
+        <p>
+          I'm a passionate <span class="text-white font-semibold">Technical Trainer</span> with experience in teaching 
+          <span class="text-red-500 font-semibold">Python, Java, DSA, Selenium, Groovy and SQL</span> to students across colleges. 
+          I believe in hands-on teaching, where logic and problem-solving are developed through live coding and interactive challenges.
+        </p>
+
+        <p>
+          I currently work at <span class="text-white font-semibold">LeSuccess</span>, a startup that empowers students and professionals 
+          with technical and interpersonal skills. I also served as a math tutor at <span class="text-white font-semibold">Focus Edumatics</span>, 
+          helping US-based students strengthen their academic foundation.
+        </p>
+
+        <p>
+          My mission is to create a strong tech community through <span class="text-white font-semibold">consistent content creation, 
+          effective teaching methods,</span> and building confidence in learners to crack real-world problems and placement tests.
+        </p>
+      </div>
+
+      <!-- Resume Button -->
+      <div class="mt-10" data-aos="zoom-in">
+        <a href="documents/Kirubakaran_Resume.pdf" target="_blank"
+          class="inline-flex items-center px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-md transition">
+          <i class="fas fa-file-download mr-2"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Highlights -->
+  <section class="bg-neutral-900 py-16 px-6 md:px-24">
+    <div class="max-w-4xl mx-auto" data-aos="fade-up">
+      <h3 class="text-2xl text-red-500 font-bold mb-6 text-center">Quick Highlights</h3>
+      <ul class="list-disc pl-6 space-y-3 text-lg text-gray-300">
+        <li>📍 Based in India, training students across the country</li>
+        <li>📢 Speaker & trainer at multiple engineering colleges</li>
+        <li>💡 Founder and creator of <span class="text-white font-semibold">SPELL SYNTAX</span> YouTube channel</li>
+        <li>🎯 Focused on logic-building and placement readiness</li>
+        <li>🌟 Rated highly by students for engaging teaching style</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>

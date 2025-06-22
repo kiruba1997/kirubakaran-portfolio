@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achievements</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <header class="bg-black shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-red-500">Kirubakaran</h1>
+      <nav>
+        <ul class="flex space-x-6 text-white">
+          <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-red-500">About</a></li>
+          <li><a href="skills.html" class="hover:text-red-500">Skills</a></li>
+          <li><a href="experience.html" class="hover:text-red-500">Experience</a></li>
+          <li><a href="achievements.html" class="text-red-500 font-semibold">Achievements</a></li>
+          <li><a href="spellsyntax.html" class="hover:text-red-500">Spell Syntax</a></li>
+          <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Offset for navbar -->
+  <div class="pt-24"></div>
+
+  <!-- Achievements Section -->
+  <section class="bg-black text-white py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12 text-center border-b-4 border-red-500 inline-block pb-2">Achievements</h2>
+
+      <!-- Demo Achievement -->
+      <div class="grid md:grid-cols-2 gap-10 items-center mb-20" data-aos="fade-up">
+        <img src="images/demopannel.jpg" alt="Demo Panel at VIT Institute" class="rounded-xl shadow-lg w-full object-cover hover:scale-105 transition duration-300" />
+        <div>
+          <h3 class="text-2xl font-semibold text-red-400 mb-2">Demo Cleared at VIT Institute</h3>
+          <p class="text-gray-300">Delivered a successful technical demonstration at VIT and was awarded an A grade for outstanding performance in technical training and communication.</p>
+        </div>
+      </div>
+
+      <!-- SDOT Training Achievement -->
+      <div class="mb-10" data-aos="fade-up">
+        <h3 class="text-2xl font-semibold mb-2 text-red-400">SDOT Training at VIT Campuses</h3>
+        <p class="text-gray-300">Delivered impactful training sessions across VIT campuses in Chennai, AP, Bhopal, and Vellore. The sessions focused on software development, aptitude, and soft skills, earning positive student feedback and appreciation.</p>
+      </div>
+
+      <!-- SDOT Images -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-20">
+        <img src="images/vit1.jpg" alt="Training session at VIT Chennai" class="rounded-xl shadow-lg object-cover hover:scale-105 hover:shadow-blue-500 transition duration-300" data-aos="fade-up" />
+        <img src="images/vitchennai.jpg" alt="Workshop at VIT Chennai Campus" class="rounded-xl shadow-lg object-cover hover:scale-105 hover:shadow-orange-500 transition duration-300" data-aos="fade-up" />
+        <img src="images/vit2.jpg" alt="Guest lecture at VIT Bhopal" class="rounded-xl shadow-lg object-cover hover:scale-105 hover:shadow-red-500 transition duration-300" data-aos="fade-up" />
+        <img src="images/vit3.jpg" alt="Interactive session at VIT AP" class="rounded-xl shadow-lg object-cover hover:scale-105 hover:shadow-green-500 transition duration-300" data-aos="fade-up" />
+        <img src="images/vitvellore.jpg" alt="Seminar conducted at VIT Vellore" class="rounded-xl shadow-lg object-cover hover:scale-105 hover:shadow-pink-500 transition duration-300" data-aos="fade-up" />
+        <img src="images/vitap.jpg" alt="SDOT training at VIT Andhra Pradesh" class="rounded-xl shadow-lg object-cover hover:scale-105 hover:shadow-red-500 transition duration-300" data-aos="fade-up" />
+      </div>
+
+      <!-- Student Appreciation -->
+      <div class="mb-20 text-center" data-aos="fade-up">
+        <h3 class="text-2xl font-semibold mb-4 text-red-400">Student Appreciation</h3>
+        <p class="text-gray-300 mb-6">Received valuable feedback from students through LinkedIn acknowledging the training sessions and mentorship provided.</p>
+        <img src="images/ss.png" alt="Screenshot of student appreciation on LinkedIn" class="rounded-xl shadow-xl mx-auto max-w-2xl w-full object-contain hover:scale-105 hover:shadow-orange-500 transition duration-300" />
+      </div>
+
+      
+  </section>
+
+  <!-- AOS JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+</body>
+</html>
